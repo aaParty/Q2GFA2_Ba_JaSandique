@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&family=Open+Sans');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    font-family: 'Roboto Slab';
+    text-align: center;
+    font-weight: bolder;
+    color: azure;
+}
+
+h2
+{
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: bolder;
+    color: azure;
+}
+
+body
+{
+    background-color: rgb(22, 24, 43);
+}
+
+.banner
+{
+    position: absolute;
+}
+
+.navbar
+{
+    margin: 0px;
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(to left, rgb(82, 23, 133), rgb(93, 24, 154), rgb(91, 36, 139), rgb(89, 30, 141), rgb(80, 20, 133), rgb(68, 26, 107));
+    position: fixed;
+    opacity: .5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 97.5%;
+    height: 30px;
+    top: 0;
+    z-index: 4;
+}
+
+#star1
+{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 40px;
+    animation: star1grow 5s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes star1grow
+{
+    0% {transform: scale(.5);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.5);}
+}
+
+#star2
+{
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 90px;
+    animation: star2grow 7s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes star2grow
+{
+    0% {transform: scale(.4);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(.4);}
+}
+
+#star3
+{
+    position: absolute;
+    margin-left: 875px;
+    margin-top: 160px;
+    animation: star3grow 3s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes star3grow
+{
+    0% {transform: scale(.6);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(.6);}
+}
+
+#star4
+{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 400px;
+    animation: star4grow 5s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes star4grow
+{
+    0% {transform: scale(.3);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.3);}
+}
+
+#star5
+{
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 510px;
+    animation: star5grow 4s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes star5grow
+{
+    0% {transform: scale(.4);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(.4);}
+}
+
+#star6
+{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 575px;
+    animation: star6grow 6s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes star6grow
+{
+    0% {transform: scale(.2);}
+    50% {transform: scale(.9);}
+    100% {transform: scale(.2);}
+}
+
+#star7
+{
+    position: absolute;
+    margin-left: 1060px;
+    margin-top: 310px;
+    animation: star7grow 6s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes star7grow
+{
+    0% {transform: scale(.4);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(.4);}
+}
+
+#star8
+{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 475px;
+    animation: star8grow 6s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes star8grow
+{
+    0% {transform: scale(.1);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.1);}
+}
+
+#earth
+{
+    position: absolute;
+    animation: earthmove linear 60s infinite;
+}
+
+#earth img
+{
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes earthmove
+{
+    0% {transform: translate(-200px, 350px) scale(1); z-index: 1;}
+    10% {transform: translate(-50px, 330px) scale(.95); z-index: 1;}
+    20% {transform: translate(75px, 310px) scale(.9); z-index: 1;}
+    30% {transform: translate(175px, 290px) scale(.85); z-index: 1;}
+    40% {transform: translate(250px, 270px) scale(.8); z-index: 1;}
+    50% {transform: translate(300px, 250px) scale(.75);}
+    60% {transform: translate(250px, 230px) scale(.7);}
+    70% {transform: translate(175px, 210px) scale(.65);}
+    80% {transform: translate(75px, 190px) scale(.6);}
+    90% {transform: translate(-50px, 170px) scale(.55);}
+    100% {transform: translate(-200px, 150px) scale(.5);}
+}
+
+#mars
+{
+    position: absolute;
+    animation: marsmove linear 80s infinite;
+}
+
+#mars img
+{
+    height: 225px;
+    width: 225px;
+}
+
+@keyframes marsmove
+{
+    0% {transform: translate(550px, 290px) scale(.8); z-index: 2;}
+    10% {transform: translate(700px, 250px) scale(.75); z-index: -1;}
+    20% {transform: translate(550px, 210px) scale(.7); z-index: -1;}
+    30% {transform: translate(425px, 170px) scale(.65); z-index: -1;}
+    40% {transform: translate(225px, 130px) scale(.6); z-index: -1;}
+    50% {transform: translate(75px, 90px) scale(.55); z-index: -1;}
+    60% {transform: translate(-200px, 50px) scale(.5); z-index: -1;}
+    60.001% {transform: translate(-200px, 450px) scale(1); z-index: 2;}
+    70% {transform: translate(75px, 410px) scale(.95); z-index: 2;}
+    80% {transform: translate(225px, 370px) scale(.9); z-index: 2;}
+    90% {transform: translate(425px, 330px) scale(.85); z-index: 2;}
+    100% {transform: translate(450px, 290px) scale(.8); z-index: 2;}
+}
+
+#sun
+{
+    position: absolute;
+    margin-left: -400px;
+    margin-top: -100px;
+}
+
+#sun img
+{
+    height: 800px;
+    width: 800px;
+}
+
+#meteor
+{
+    position: absolute;
+    animation: meteormove linear 10s infinite;
+}
+
+#meteor img
+{
+    height: 75px;
+    width: 75px;
+}
+
+@keyframes meteormove
+{
+    0% {transform: translate(-100px, 0px) skew(60deg); z-index: 3;}
+    50% {transform: translate(700px, 50px) rotate(360deg); z-index: 3;}
+    100% {transform: translate(1400px, 125px) rotate(720deg); z-index: 3;}
+}
